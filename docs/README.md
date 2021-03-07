@@ -1,5 +1,7 @@
 # Sked
 
+![device-2021-03-07-164023](https://user-images.githubusercontent.com/2444822/110247369-dd867b00-7f63-11eb-844d-86cabc314df8.png)
+
 [Requirements](requirements.md)
 
 
