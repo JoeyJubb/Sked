@@ -11,9 +11,14 @@ Sked implements [clean architecture](https://blog.cleancoder.com/uncle-bob/2012/
  ### domain 
 Business logic lives here.
 
+Each business requirement is defined with a "UseCase", in this project we have the following:
+- `ObserveInternetConnectivityUseCase` covers the requirement to indicate to the user when the device is offline
+- `ObserveTasksListUseCase` covers the requirement to show the user a list of tasks. Note that being able to filter the list is a UI requirement so is handled in the `presentation` layer
 
  ### data
 Persistence logic lives here.
+
+Implements the repositories defined in the domain layer.
 
  ### presentation
 Navigation and view logic live here.
