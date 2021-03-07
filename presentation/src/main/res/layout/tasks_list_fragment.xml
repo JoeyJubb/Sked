@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.tasks.list.TasksListFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.MyTheme.AppBarLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="@string/tasks_list_title" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        tools:listitem="@layout/tasks_list_fragment_item" />
+
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:id="@+id/filter_toggle_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="@dimen/margin_default"
+        android:background="?colorSurface"
+        app:checkedButton="@+id/filter_button_general"
+        app:layout_behavior="com.google.android.material.behavior.HideBottomViewOnScrollBehavior"
+        app:singleSelection="false">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/filter_button_general"
+            style="@style/IconOnlyButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:contentDescription="@string/content_description_toggle_button_general"
+            app:icon="@drawable/ic_task_general_24dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/filter_button_hydration"
+            style="@style/IconOnlyButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:contentDescription="@string/content_description_toggle_button_hydration"
+            app:icon="@drawable/ic_task_hydration_24dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/filter_button_medication"
+            style="@style/IconOnlyButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:contentDescription="@string/content_description_toggle_button_medication"
+            app:icon="@drawable/ic_task_medication_24dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/filter_button_nutrition"
+            style="@style/IconOnlyButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:contentDescription="@string/content_description_toggle_button_nutrition"
+            app:icon="@drawable/ic_task_nutrition_24dp" />
+
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

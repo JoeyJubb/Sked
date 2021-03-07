@@ -1,0 +1,5 @@
+include ':app'
+include ':presentation'
+include ':data'
+include ':domain'
+rootProject.name = "Sked"

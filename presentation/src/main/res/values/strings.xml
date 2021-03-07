@@ -1,0 +1,35 @@
+<resources>
+
+    <string name="app_name">Sked</string>
+
+    <!-- Generic Strings -->
+    <string name="retry">Retry</string>
+    <string name="go_back">Go back</string>
+
+    <!-- Error messages -->
+    <string name="error_generic">Something went wrong. Please try again.</string>
+    <string name="error_offline">You are offline</string>
+
+    <!-- Api Error Messages -->
+    <string name="api_error_dev">There was a problem talking to the network. Retrying is unlikely to solve the issue.</string>
+    <string name="api_error_fallback">There was a problem talking to the network. Please try again.</string>
+
+    <!-- Main Activity -->
+    <string name="online_indicator_offline">You are offline</string>
+    <string name="online_indicator_back_online">Back online</string>
+
+    <!-- Tasks List -->
+    <string name="tasks_list_title">Tasks</string>
+    <string name="tasks_list_no_tasks">No tasks to show. Try adjusting the filters you\'ve selected</string>
+
+    <string name="content_description_task_type_general">General Task</string>
+    <string name="content_description_task_type_hydration">Hydration Task</string>
+    <string name="content_description_task_type_medication">Medication Task</string>
+    <string name="content_description_task_type_nutrition">Nutrition Task</string>
+
+    <string name="content_description_toggle_button_general">Show General Tasks</string>
+    <string name="content_description_toggle_button_hydration">Show Hydration Tasks</string>
+    <string name="content_description_toggle_button_medication">Show Medication Tasks</string>
+    <string name="content_description_toggle_button_nutrition">Show Nutrition Tasks</string>
+
+</resources>

@@ -1,0 +1,13 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="uk.co.bubblebearapps.sked">
+
+    <application
+        android:name="uk.co.bubblebearapps.sked.App"
+        android:fullBackupContent="@xml/backup_descriptor"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round">
+
+    </application>
+
+</manifest>

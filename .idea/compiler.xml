@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel target="1.7">
+      <module name="domain" target="1.7" />
+      <module name="Populus.app" target="1.8" />
+      <module name="Populus.data" target="1.8" />
+      <module name="Populus.presentation" target="1.8" />
+      <module name="Sked.app" target="1.8" />
+      <module name="Sked.core" target="1.8" />
+      <module name="Sked.data" target="1.8" />
+      <module name="Sked.presentation" target="1.8" />
+      <module name="Wagwan.data" target="1.8" />
+      <module name="Wagwan.populus" target="1.8" />
+      <module name="Wagwan.presentation" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
